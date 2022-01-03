@@ -1,16 +1,16 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
+import React from "react";
+import {graphql, Link} from "gatsby";
 
-export default function Blog({ data }) {
-  const { posts } = data.blog
-  console.log(posts[0])
+export default function Blog({data}) {
+  const {posts} = data.blog;
+  console.log(posts[0]);
 
   return (
     <div>
       <h1>My blog posts</h1>
       <Link to="/">Home</Link>
 
-      {posts.map(post => (
+      {posts.map((post) => (
         <article key={post.id}>
           <Link to={post.fields.slug}>
             <h2>{post.frontmatter.title}</h2>
@@ -22,7 +22,7 @@ export default function Blog({ data }) {
         </article>
       ))}
     </div>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -42,4 +42,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -3,10 +3,13 @@ import { graphql, Link } from "gatsby"
 
 export default function Blog({ data }) {
   const { posts } = data.blog
+  console.log(posts[0])
 
   return (
     <div>
       <h1>My blog posts</h1>
+      <Link to="/">Home</Link>
+
       {posts.map(post => (
         <article key={post.id}>
           <Link to={post.fields.slug}>

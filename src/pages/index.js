@@ -6,9 +6,10 @@ export default function Home({ data }) {
 
   return (
     <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <h1 className="text-sky-400">{title}</h1>
       <Link to="/blog">Read my blog</Link>
+      <p>{description}</p>
+
       <img alt="Cute dog" src={data.image.publicURL} />
     </div>
   )

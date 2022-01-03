@@ -1,5 +1,20 @@
-
-
 my new website
+* architecture
+First, I implemented a [[https://blog.logrocket.com/creating-a-gatsby-blog-from-scratch/][basic gatsby blog structure]]
 
-https://blog.logrocket.com/creating-a-gatsby-blog-from-scratch/
+to explain the article, we have graph ql queries out markdown files, and making those blogposts
+
+then we "dynamically" create pages so that we have links to individual posts, wich I need
+this is done by *nodes* in gatsby, which we turn into "slugs" with graph ql (the code in gatsby-node.js)
+finally, with the code in templates/blog-post.js, we spawn pages for the slugs
+
+(again, we first generate slug paths in gatsby-node, then that slug is used in the rest of the cose)
+
+
+
+* file structure
+gatsby config file has site's metadata, plugins, and general config
+
+each default export in src/pages is a url submodule
+
+

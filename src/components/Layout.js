@@ -6,35 +6,36 @@ const Layout = ({children}) => {
      Hover:opacity-70
      text-sm
      sm:text-lg
+     flex 
+     space-x-3
     `;
   const logoStyle = `
-    text-white 
     font-rammetto
     sm:text-base
     text-sm
     `;
   return (
     <div>
-      <nav className="flex sm:justify-between justify-around items-center bg-green-900 lg:px-20 sm:px-6 py-8 text-gray-100">
-        <h3 className={logoStyle}>HealthRoom</h3>
-        <ul className="flex space-x-2">
-          <li className={linkStyle}>
+      <nav className="flex sm:justify-between justify-around items-center lg:px-20 sm:px-6 py-8">
+        {/* <h3 className={logoStyle}>HealthRoom</h3> */}
+        <ul className={linkStyle}>
+          <li>
             <Link to="/">Home</Link>
           </li>
-          <li className={linkStyle}>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li className={linkStyle}>
+          <li>
             <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </nav>
 
       <main>{children}</main>
 
-      <footer className="text-center py-8 bg-green-900 text-gray-100">
+      <footer className="text-center py-8">
         <p>
-          Copyright 2030 <span className={logoStyle}>HealthRoom</span>
+          {/* Copyright 2030 <span className={logoStyle}>HealthRoom</span> */}
         </p>
       </footer>
     </div>

@@ -10,7 +10,7 @@ finally, with the code in templates/blog-post.js, we spawn pages for the slugs
 
 (again, we first generate slug paths in gatsby-node, then that slug is used in the rest of the cose)
 
-
+[[https://blog.logrocket.com/using-gatsby-with-tailwind-css-a-tutorial-with-examples/][added tailwind support and layout component]]
 
 * file structure
 gatsby config file has site's metadata, plugins, and general config

@@ -16,5 +16,19 @@ finally, with the code in templates/blog-post.js, we spawn pages for the slugs
 gatsby config file has site's metadata, plugins, and general config
 
 each default export in src/pages is a url submodule
+* Plans
+** have a subdomain for roam
+** Have a subdomain for blog
+** Main Website for basic info
+** Add in previous info
+*** What I'm currently doing
+*** projects
+*** Books
+*** Timelines
+**** life events
+**** things I'm focusing on
+**** World events
+
+
 
 

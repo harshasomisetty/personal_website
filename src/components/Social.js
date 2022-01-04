@@ -14,29 +14,33 @@ const SocialIcon = ({icon, link_text}) => {
     </div>
   );
 };
+
+const size = 40;
+
 const Social = () => {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row space-x-3">
       <SocialIcon
-        icon={<FaGithub />}
+        icon={<FaGithub size={size} />}
         link_text={"https://www.github.com/harshasomisetty"}
       />
       <SocialIcon
-        icon={<FaLinkedinIn />}
+        icon={<FaLinkedinIn size={size} />}
         link_text={"https://www.linkedin.com/in/harshasomisetty"}
+        size={size}
       />
       <SocialIcon
-        icon={<FaTwitter />}
+        icon={<FaTwitter size={size} />}
         link_text={"https://www.twitter.com/HarshaSomisetty"}
       />
       <SocialIcon
-        icon={<FaAddressCard />}
+        icon={<FaAddressCard size={size} />}
         link_text={
           "https://docs.google.com/document/d/1GccuGcXmZ6tDAI0Y_svTLM5yTiuQJBqra5AY8o4xE2g/edit"
         }
       />
       <SocialIcon
-        icon={<FaRegEnvelope />}
+        icon={<FaRegEnvelope size={size} />}
         link_text={"mailto: hs884@scarletmail.rutgers.edu"}
       />
     </div>

@@ -9,11 +9,11 @@ const Layout = ({children}) => {
      flex 
      space-x-3
     `;
-  const logoStyle = `
-    font-rammetto
-    sm:text-base
-    text-sm
-    `;
+  // const logoStyle = `
+  //   font-rammetto
+  //   sm:text-base
+  //   text-sm
+  //   `;
   return (
     <div>
       <nav className="flex sm:justify-between justify-around items-center lg:px-20 sm:px-6 py-8">
@@ -23,10 +23,10 @@ const Layout = ({children}) => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/notes">Notes</Link>
           </li>
         </ul>
       </nav>

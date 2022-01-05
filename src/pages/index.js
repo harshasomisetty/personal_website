@@ -1,20 +1,19 @@
 import React from "react";
 import {graphql} from "gatsby";
-import {MDXRenderer, MDXProvider} from "gatsby-plugin-mdx";
+import {MDXRenderer} from "gatsby-plugin-mdx";
 import Layout from "../components/Layout";
 import Projects from "../components/Projects.js";
 
 export default function Home({data}) {
-  const about = data.about;
-  console.log(about.body);
-  // const projects = data.projects;
+  const main = data.main_md;
+  // const about = data.about;
 
   return (
     <Layout>
       <div className="m-10 flex flex-col space-y-5">
-        <MDXRenderer>{about.body}</MDXRenderer>
+        <MDXRenderer>{main.body}</MDXRenderer>
         <Projects />
-        {/* <MDXRenderer>{projects.body}</MDXRenderer> */}
+        {/* <MDXRenderer>{about.body}</MDXRenderer> */}
       </div>
     </Layout>
   );
@@ -22,6 +21,10 @@ export default function Home({data}) {
 
 export const pageQuery = graphql`
   query IndexQuery {
+    main_md: mdx(frontmatter: {title: {eq: "main"}}) {
+      id
+      body
+    }
     about: mdx(frontmatter: {title: {eq: "about"}}) {
       id
       body

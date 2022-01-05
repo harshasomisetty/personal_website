@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "gatsby";
+import Social from "../components/Social.js";
+import resume from "../../static/Harsha-Somisetty-Resume.pdf";
 
 const Layout = ({children}) => {
   const linkStyle = `
@@ -16,20 +18,26 @@ const Layout = ({children}) => {
   //   `;
   return (
     <div>
-      <nav className="flex sm:justify-between justify-around items-center lg:px-20 sm:px-6 py-8">
-        {/* <h3 className={logoStyle}>HealthRoom</h3> */}
-        <ul className={linkStyle}>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/notes">Notes</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="flex flex-row justify-between lg:px-20 sm:px-6 py-8">
+        <nav className="flex sm:justify-between justify-around items-center ">
+          <ul className={linkStyle}>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/notes">Notes</Link>
+            </li>
+            <li>
+              {" "}
+              <a href={resume}>Resume</a>
+            </li>
+          </ul>
+        </nav>
+        <Social size={30} />
+      </div>
 
       <main>{children}</main>
 

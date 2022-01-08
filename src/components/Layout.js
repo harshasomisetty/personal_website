@@ -28,7 +28,7 @@ const Layout = ({children}) => {
               <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <Link to="/notes">Notes</Link>
+              <a href="http://notes.harshasomisetty.me">Notes</a>
             </li>
             <li>
               {" "}

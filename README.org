@@ -1,4 +1,5 @@
-my new website
+my new website: available at [[harshasomisetty.me][harshasomisetty.me]]
+
 * architecture
 First, I implemented a [[https://blog.logrocket.com/creating-a-gatsby-blog-from-scratch/][basic gatsby blog structure]]
 
@@ -12,14 +13,11 @@ finally, with the code in templates/blog-post.js, we spawn pages for the slugs
 
 [[https://blog.logrocket.com/using-gatsby-with-tailwind-css-a-tutorial-with-examples/][added tailwind support and layout component]]
 
-* file structure
-gatsby config file has site's metadata, plugins, and general config
+[[https://github.com/daniel-norris/gatsby-tutorial][very useful repo for querying data]]
 
-each default export in src/pages is a url submodule
-* Plans
+* TODO
 ** have a subdomain for roam
 ** Have a subdomain for blog
-** Main Website for basic info
 ** Add in previous info
 *** What I'm currently doing
 *** projects
@@ -28,6 +26,9 @@ each default export in src/pages is a url submodule
 **** life events
 **** things I'm focusing on
 **** World events
+** add in other projects and conditional rendering
+*** artha
+*** tda 
 
 
 

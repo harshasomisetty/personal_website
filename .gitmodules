@@ -1,0 +1,6 @@
+[submodule "roam-notes/themes/cortex-dark"]
+	path = roam-notes/themes/cortex-dark
+	url = https://github.com/ayrat555/cortex-dark
+[submodule "roam-notes/themes/cortex"]
+	path = roam-notes/themes/cortex
+	url = https://github.com/jethrokuan/cortex

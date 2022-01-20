@@ -16,19 +16,19 @@ finally, with the code in templates/blog-post.js, we spawn pages for the slugs
 [[https://github.com/daniel-norris/gatsby-tutorial][very useful repo for querying data]]
 
 * TODO
-** have a subdomain for roam
-** Have a subdomain for blog
-** Add in previous info
-*** What I'm currently doing
-*** projects
-*** Books
-*** Timelines
-**** life events
-**** things I'm focusing on
-**** World events
-** add in other projects and conditional rendering
-*** artha
-*** tda 
+- have a subdomain for roam
+- Have a subdomain for blog
+- Add in previous info
+  - What I'm currently doing
+  - projects
+  - Books
+  - Timelines
+    - life events
+    - things I'm focusing on
+    - World events
+- add in other projects and conditional rendering
+  - artha
+  - tda 
 
 
 

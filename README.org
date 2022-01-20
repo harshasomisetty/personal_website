@@ -1,4 +1,4 @@
-my new website: available at [[harshasomisetty.me][harshasomisetty.me]]
+my new website: available at [[https://harshasomisetty.me][harshasomisetty.me]]
 
 * architecture
 First, I implemented a [[https://blog.logrocket.com/creating-a-gatsby-blog-from-scratch/][basic gatsby blog structure]]

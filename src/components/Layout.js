@@ -24,9 +24,9 @@ const Layout = ({children}) => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
+            {/* <li> */}
+            {/*   <Link to="/blog">Blog</Link> */}
+            {/* </li> */}
             <li>
               <a href="http://notes.harshasomisetty.me">Notes</a>
             </li>

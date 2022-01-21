@@ -1,5 +1,6 @@
 import React from "react";
-import {FaGithub, FaLinkedinIn, FaTwitter, FaRegEnvelope} from "react-icons/fa";
+import {FaInstagram, FaRegEnvelope} from "react-icons/fa";
+import {FiTwitter, FiLinkedin, FiGithub} from "react-icons/fi";
 
 const SocialIcon = ({icon, link_text}) => {
   return (
@@ -13,17 +14,22 @@ const Social = ({size = 40}) => {
   return (
     <div className="flex flex-row space-x-3">
       <SocialIcon
-        icon={<FaGithub size={size} />}
+        icon={<FiGithub size={size} />}
         link_text={"https://www.github.com/harshasomisetty"}
       />
       <SocialIcon
-        icon={<FaLinkedinIn size={size} />}
+        icon={<FiLinkedin size={size} />}
         link_text={"https://www.linkedin.com/in/harshasomisetty"}
         size={size}
       />
       <SocialIcon
-        icon={<FaTwitter size={size} />}
+        icon={<FiTwitter size={size} />}
         link_text={"https://www.twitter.com/HarshaSomisetty"}
+      />
+      <SocialIcon
+        icon={<FaInstagram size={size} />}
+        link_text={"https://www.instagram.com/harshasomisetty"}
+        size={size}
       />
       <SocialIcon
         icon={<FaRegEnvelope size={size} />}
